@@ -1,0 +1,15 @@
+<section id="logIn">
+  <h1 id="logInHeader">Sign up: 👆🏼</h1>
+  <div class="logInField">
+    <label>Email: </label>
+    <input type="text" placeholder="Enter your e-mail" [(ngModel)]="email">
+  </div>
+  <div class="logInField">
+    <label>Password: </label>
+    <input type="password" placeholder="Enter your password" [(ngModel)]="password">
+  </div>
+  <a routerLink="/login" routerLinkActive="active">
+  <button (click)="save()" id="addButton"> Save
+  </button></a>
+</section>
+

@@ -1,0 +1,22 @@
+li{
+  margin-bottom: 10px;
+}
+
+ul, li{
+  list-style-type: none;
+}
+
+.card{
+  box-shadow: none;
+}
+
+.container{
+  position: absolute;
+  top: 120px;
+}
+
+.buttonsBox{
+  margin-bottom: 20px;
+}
+
+

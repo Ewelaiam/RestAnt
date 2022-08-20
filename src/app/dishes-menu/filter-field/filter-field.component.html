@@ -1,0 +1,19 @@
+<div id="filterField" *ngIf="flag">
+  <p>Select your preferences:</p>
+
+  <p>Price:</p>
+  <div class="inputSearch1">
+    <input [(ngModel)]="lowPriceChosen" (ngModelChange)="emit()" placeholder="From">
+    <input [(ngModel)]="highPriceChosen" placeholder="To" (ngModelChange)="emit()">
+  </div>
+
+  <div id="inputSearch1">
+    <p>Type, cuisine or category:</p>
+    <input [(ngModel)]="textChosen" placeholder="cuisine, type or category" (ngModelChange)="emit()">
+  </div>
+
+</div>
+<div id="searchButton">
+  <button id="myBtn" (click)="onSubmit()">Search dish</button>
+</div>
+

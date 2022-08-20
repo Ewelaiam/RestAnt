@@ -1,0 +1,18 @@
+<app-nav></app-nav>
+<div class="container">
+  <button (click)="case=2">Change users roles</button>
+  <div *ngIf="case==2" class="boxes">
+    <ul>
+      <li *ngFor="let user of users">
+        <app-users-roles [userData]="user" class="card">
+        </app-users-roles>
+      </li>
+    </ul>
+  </div>
+  <button (click)="case=3">Change persistence</button>
+  <div *ngIf="case==3">
+    <app-persistence></app-persistence>
+  </div>
+
+</div>
+

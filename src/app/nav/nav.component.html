@@ -1,0 +1,20 @@
+<div id="navDishes">
+  <div class="logo">
+    👑 REST ANT 👑
+  </div>
+  <div class="userNav">
+    <span *ngIf="user">USER:</span> <br>
+    <span *ngIf="user">{{ user.email.split("@")[0]}}</span><br>
+  </div>
+
+
+  <a routerLink="/adminView" routerLinkActive="active" *ngIf="user != undefined && user.roles.admin">Admin view</a>
+  <a routerLink="/aboutUs" routerLinkActive="active">About Us</a>
+  <a routerLink="/dishes" routerLinkActive="active">Menu</a>
+  <a routerLink="/shoppingCart" routerLinkActive="active" *ngIf="user != undefined && user.roles.client">Shopping Cart</a>
+  <a routerLink="/dishesManager" routerLinkActive="active" *ngIf="user != undefined && (user.roles.manager || user.roles.admin)">Dishes Manager</a>
+  <a (click)="logout()" *ngIf="user">Log out</a>
+  <a routerLink="/login" *ngIf="!user">Log in</a>
+  <a routerLink="/signup" *ngIf="!user">Sign up</a>
+</div>
+

@@ -1,0 +1,11 @@
+span{
+  gap: 10px;
+}
+
+.editBtn{
+  background-color: yellow;
+}
+
+.deleteDishBtn{
+  background-color: #ff7e50;
+}

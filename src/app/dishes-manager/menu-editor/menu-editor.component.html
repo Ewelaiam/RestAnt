@@ -1,0 +1,39 @@
+<span>
+  {{dishData.name}}
+  <button (click)="edit()" class="editBtn"> Edit</button>
+  <button (click)="delete()" class="deleteDishBtn">Delete</button>
+</span>
+
+
+<div *ngIf="toEdit" class="menuBox">
+  <ul>
+    name: <input [(ngModel)]="currData.name" value="{{ dishData.name }}" name="name">
+    <button class="saveBtn" (click)="save(dishData.name)">Save</button><br>
+    cuisine: <input [(ngModel)]="currData.cuisine" value="{{ dishData.cuisine }}" name="cuisine">
+    <button class="saveBtn" (click)="save(dishData.cuisine)">Save</button><br>
+    category: <input [(ngModel)]="currData.category" value="{{ dishData.category }}" name="category">
+    <button class="saveBtn" (click)="save(dishData.category)">Save</button><br>
+    type: <input [(ngModel)]="currData.type" value="{{ dishData.type }}" name="type">
+    <button class="saveBtn" (click)="save(dishData.type)">Save</button><br>
+    ingredients: <input [(ngModel)]="currData.ingredients" value="{{ dishData.ingredients }}" name="ingredients">
+    <button class="saveBtn" (click)="save(dishData.ingredients)">Save</button><br>
+    amount: <input [(ngModel)]="currData.amount" value="{{ dishData.amount }}" name="amount">
+    <button class="saveBtn" (click)="save(dishData.amount)">Save</button><br>
+    price: <input [(ngModel)]="currData.price" value="{{ dishData.price }}" name="price">
+    <button class="saveBtn" (click)="save(dishData.price)">Save</button><br>
+    description: <input [(ngModel)]="currData.description" value="{{ dishData.description }}" name="type">
+    <button class="saveBtn" (click)="save(dishData.description)">Save</button><br>
+    imgURL: <input [(ngModel)]="currData.imgURL" value="{{ dishData.imgURL }}" name="imgURL">
+    <button class="saveBtn" (click)="save(dishData.imgURL)">Save</button><br>
+    currency: <input [(ngModel)]="currData.currency" value="{{ dishData.currency }}" name="currency">
+    <button class="saveBtn" (click)="save(dishData.currency)">Save</button><br>
+    rate: <input [(ngModel)]="currData.rate" value="{{ dishData.rate }}" name="rate">
+    <button class="saveBtn" (click)="save(dishData.rate)">Save</button><br>
+    ratingArr: <input [(ngModel)]="currData.ratingArr" value="{{ dishData.ratingArr }}" name="ratingArr">
+    <button class="saveBtn" (click)="save(dishData.ratingArr)">Save</button><br>
+
+  </ul>
+
+</div>
+
+

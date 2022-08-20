@@ -1,0 +1,26 @@
+<span>
+  {{ userData.email }} <br>
+
+  admin: <input [(ngModel)]="currData.admin" value="{{ userData.roles.admin }}">
+  <button [ngStyle]="{'background-color': flag1 ?'red':'#44daff'}"
+          (click)="currData.admin = !currData.admin; flag1=!flag1">
+    change
+  </button> <br>
+
+  manager: <input [(ngModel)]="currData.manager" value="{{ userData.roles.manager }}">
+  <button [ngStyle]="{'background-color': flag2 ?'red':'#44daff'}"
+          (click)="currData.manager = !currData.manager; flag2=!flag2">change</button> <br>
+
+  client: <input [(ngModel)]="currData.client" value="{{ userData.roles.client }}">
+  <button [ngStyle]="{'background-color': flag3 ?'red':'#44daff'}"
+          (click)="currData.client = !currData.client;flag3=!flag3" >change</button> <br>
+
+  reader: <input [(ngModel)]="currData.visitor" value="{{ userData.roles.visitor }}">
+  <button [ngStyle]="{'background-color': flag4 ?'red':'#44daff'}"
+          (click)="currData.visitor = !currData.visitor; flag4=!flag4" >change</button> <br>
+
+  banned: <input [(ngModel)]="currData.banned" value="{{ userData.roles.banned }}">
+  <button [ngStyle]="{'background-color': flag5 ?'red':'#44daff'}"
+          (click)="currData.banned = !currData.banned; flag5=!flag5" >change</button> <br>
+  <button class="saveBtn" (click)="save()">Save</button>
+</span>

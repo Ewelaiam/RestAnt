@@ -1,0 +1,81 @@
+.container{
+  position: absolute;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dishAllInfo{
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 70vh;
+  background-color: #ffd6b1;
+
+}
+
+.imgDetails{
+  position: relative;
+  overflow: hidden;
+}
+
+.imgDetails img{
+  width: 30%;
+  height: 30%;
+}
+
+.dishDetails{
+  margin: 20px;
+}
+
+.elemOfList{
+  display: flex;
+  justify-content: space-between;
+}
+
+pre{
+  margin: 4px;
+  font-size: 15px;
+}
+
+
+h5{
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+.returnToMenu{
+  text-align: right;
+  text-decoration: none;
+  background-color: #2e2a2b;
+  font-weight: bolder;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  background-color: #005580;
+}
+
+.btnDetails{
+  display: flex;
+}
+
+.rateDetails{
+  background-color: #fcbe03;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+
+}
+
+
+
+
+

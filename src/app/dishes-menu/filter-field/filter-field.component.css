@@ -1,0 +1,11 @@
+#searchButton{
+  position: absolute;
+  top: 120px;
+  left: 750px;
+}
+
+#filterField{
+  position: relative;
+  top: 90px;
+  background-color: #cccccc;
+}

@@ -1,0 +1,81 @@
+main{
+  position: absolute;
+  top: 90px;
+}
+
+.startView{
+  background-image: url("src/assets/img/restaurant.jpg");
+  height: 90vh;
+
+}
+
+.textView{
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  text-align: center;
+  background-color: #2e2a2b;
+  color: white;
+}
+
+.logo{
+  font-size: 60px;
+  padding-top: 20px;
+}
+
+.slogan{
+  font-size: 30px;
+  padding: 20px;
+}
+
+.startInfo{
+  padding: 30px;
+  background-color: #2e2a2b;
+  color: white;
+}
+
+.startAboutUs{
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.imgPosition{
+  text-align: center;
+}
+
+.startContact{
+  display: flex;
+  gap: 400px;
+}
+
+.contactInfo{
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact{
+  padding-top: 30px;
+}
+
+.pCont{
+  padding: 0;
+  margin: 0;
+}
+
+h6{
+  padding-top: 30px;
+  font-weight: bolder;
+
+}
+
+footer{
+  display: flex;
+  gap: 500px;
+  background-color: #2e2a2b;
+  padding: 10px;
+}
+
+.footerText{
+  color: white;
+}

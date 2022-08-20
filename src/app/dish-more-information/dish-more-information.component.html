@@ -1,0 +1,68 @@
+<app-nav></app-nav>
+<div *ngFor="let x of openDish">
+
+  <div class="container">
+    <div class="dishAllInfo">
+      <div class="imgDetails">
+        <img src="{{ x.imgURL }}" alt="...">
+        <img src="{{ x.imgURL }}" alt="...">
+        <img src="{{ x.imgURL }}" alt="...">
+        <img src="{{ x.imgURL }}" alt="...">
+        <img src="{{ x.imgURL }}" alt="...">
+        <img src="{{ x.imgURL }}" alt="...">
+        <img src="{{ x.imgURL }}" alt="...">
+        <img src="{{ x.imgURL }}" alt="...">
+        <img src="{{ x.imgURL }}" alt="...">
+      </div>
+
+      <div class="subContainer">
+        <div class="dishDetails">
+          <h5>{{ x.name }}</h5>
+          <div class="returnToMenu"><a routerLink="/dishes" routerLinkActive="active">Return to menu</a></div>
+          <div class="card-text">
+            <pre>Country:      {{ x.cuisine }}</pre>
+            <pre>Category:     {{ x.category }}</pre>
+            <pre>Type:         {{ x.type }}</pre>
+            <pre>Ingredients:  {{x.ingredients}}</pre>
+            <pre>Amount:       {{x.amount}}</pre>
+            <pre>Price:        {{x.price}}</pre>
+            <pre>Description:  {{ x.description }} </pre>
+            <pre>Currency:     {{x.currency}} </pre>
+            <pre>Rate:         {{x.rate}} </pre>
+            <pre>Free spaces:  {{ x.amount - x.booked }}</pre>
+
+
+            <span *ngIf="x.rateNum != 0">{{ (x.rate/x.rateNum) | number }}</span>
+          </div>
+        </div>
+
+        <div class="btnDetails">
+          <button (click)="book()" [ngStyle]="{'display': x.booked < x.amount ? 'block' : 'none' }" class="buttonAdd">+</button>
+          <button (click)="cancel()" [ngStyle]="{'display': x.booked > 0 ? 'block' : 'none' }" class="buttonMinus" >-</button>
+          <button (click)="delete()" *ngIf="user != undefined && (user.roles.manager || user.roles.admin)" class="buttonDelete">Delete</button>
+
+          <select class="rateDetails" [(ngModel)]="rateChose" (ngModelChange)="addToRate()" *ngIf="user != undefined && !user.roles.manager && !user.roles.banned">
+            <option class="rateScale" value="Rate here" selected disabled hidden>Rate here</option>
+            <option class="rateScale">1</option>
+            <option class="rateScale">2</option>
+            <option class="rateScale">3</option>
+            <option class="rateScale">4</option>
+            <option class="rateScale">5</option>
+          </select>
+          <span style="margin: 10px;"></span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="user != undefined && user.roles.client && !user.roles.banned">
+      <app-forum></app-forum>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+

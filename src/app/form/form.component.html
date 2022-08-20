@@ -1,0 +1,37 @@
+<app-nav></app-nav>
+
+<div class="form">
+  <p class="formTitle">Add your proposition of dish: 🍽️ </p>
+  <form [formGroup]="modelForm" novalidate>
+
+    <label>Name of dish:</label>
+    <input name="name" formControlName="name" type="text"><br>
+
+    <label>Type of cuisine:</label>
+    <input name="cuisine" formControlName="cuisine" type="text"><br>
+
+    <label>Category of dish:</label>
+    <input name="category" formControlName="category" type="text"><br>
+
+    <label>Type of dish:</label>
+    <input name="type" formControlName="type" type="text"><br>
+
+    <label>Ingredients:</label>
+    <input name="ingredients" formControlName="ingredients" type="text"><br>
+
+    <label>Amount:</label>
+    <input name="amount" formControlName="amount" type="text"><br>
+
+    <label>Price:</label>
+    <input name="price" formControlName="price" type="number"><br>
+
+    <label>Description:</label>
+    <input name="description" formControlName="description" type="text"><br>
+
+    <label>Currency (USD/Euro):</label>
+    <input name="currency" formControlName="currency" type="text"><br>
+
+
+    <button  type="submit" id="addButton" (click)="addDish()" >Add</button>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+<app-nav></app-nav>
+<div class="container">
+  <h1>Welcome in dishes manager! </h1>
+  <p>Choose option: </p>
+  <div class="buttonsBox">
+    <button (click)="case=1" >Menu</button>
+    <a routerLink="/addNewDish" routerLinkActive="active"><button>Add new dish</button></a>
+  </div>
+
+
+  <div *ngIf="case==1" class="menuBox">
+    <ul>
+      <li *ngFor="let dish of dishes" >
+        <app-menu-editor [dishData]="dish" class="card"></app-menu-editor>
+      </li>
+    </ul>
+  </div>
+</div>
+

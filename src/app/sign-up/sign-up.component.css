@@ -1,0 +1,24 @@
+#logIn{
+  position: absolute;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  text-align: center;
+}
+
+#logInHeader{
+  text-align: center;
+}
+
+.logInField{
+  justify-items: stretch;
+}
+
+button{
+  margin-top: 20px;
+}
+
+

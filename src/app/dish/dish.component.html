@@ -1,0 +1,18 @@
+<div class="card">
+    <h2>{{ someDish.name | uppercase }}</h2>
+    <div class="imgContainer">
+      <a routerLink="/dishDetails/{{someDish.key}}" routerLinkActive="active"><img src="{{ someDish.imgURL }}"> </a>
+    </div>
+    <p>
+      {{someDish.description}}<br>
+      Cuisine: {{someDish.cuisine | uppercase }} <br>
+      Price: {{someDish.price}} {{getCurrency(someDish.currency)}} <br>
+      <span *ngIf="(someDish.amount-someDish.booked) != 0" [ngStyle]="{'background-color': (someDish.amount-someDish.booked) <= 3 ? 'red' : ''}">
+        Daily amount: {{someDish.amount - someDish.booked}}</span>
+      <span *ngIf="someDish.booked == someDish.amount">Vacancies: there is no free spaces</span>
+    </p>
+</div>
+
+
+
+

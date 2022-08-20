@@ -1,0 +1,225 @@
+[
+    {
+      "name": "Pierogi",
+      "cuisine": "Polish",
+      "category": "vegetarian",
+      "type": "main course",
+      "ingredients": ["flour", "egg", "cottage cheese", "potatoes", "onion", "butter"],
+      "amount": 20,
+      "price": 8,
+      "description": "Traditional dish of Polish cuisine",
+      "imgURL": "https://source.unsplash.com/1000x900/?dumplings",
+      "currency": "USD",
+      "rate": "⭐",
+      "ratingArr": [3,2,1]
+    },
+
+  {
+    "name": "Spaghetti",
+    "cuisine": "Italien",
+    "category": "meat",
+    "type": "main course",
+    "ingredients": ["flour", "egg", "pork", "onion", "tomato sauce", "parmesan", "oregano", "basic"],
+    "amount": 20,
+    "price": 9,
+    "description": "Traditional dish of Italien cuisine",
+    "imgURL": "https://source.unsplash.com/1000x900/?spaghetti",
+    "currency": "EURO",
+    "rate": "⭐⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Scrambled eggs",
+    "cuisine": "Poland",
+    "category": "vegetarian",
+    "type": "breakfast",
+    "ingredients": ["egg", "butter", "chives"],
+    "amount": 8,
+    "price": 5,
+    "description": "Tasty and rich breakfast to start a day positively",
+    "imgURL": "https://source.unsplash.com/1000x900/?scrambled",
+    "currency": "USD",
+    "rate": "⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Mushroom soup",
+    "cuisine": "Poland",
+    "category": "standard",
+    "type": "soup",
+    "ingredients": ["mushrooms", "butter", "spices"],
+    "amount": 14,
+    "price": 6,
+    "description": "Traditional Polish soup. Including toast.",
+    "imgURL": "https://source.unsplash.com/1000x900/?mushroom-soup",
+    "currency": "USD",
+    "rate": "⭐⭐⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Greek Salad",
+    "cuisine": "Greek",
+    "category": "vegetarian",
+    "type": "salad",
+    "ingredients": ["iceberg lettuce", "olives", "feta cheese", "tomatoes", "cucumbers", "olive oil", "spices"],
+    "amount": 10,
+    "price": 5,
+    "description": "Delicious salad for lunch. Including bread sticks",
+    "imgURL": "https://source.unsplash.com/1000x900/?greek-salad",
+    "currency": "EURO",
+    "rate": "⭐⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Curry with carica and cashew nuts",
+    "cuisine": "Indian",
+    "category": "vegan",
+    "type": "main course",
+    "ingredients": ["carica", "cashew nuts", "coconut milk", "tomatoes", "peppers", "onion", "garlic", "curry", "rice"],
+    "amount": 20,
+    "price": 12,
+    "description": "Only in our restaurant!",
+    "imgURL": "https://source.unsplash.com/1000x900/?curry",
+    "currency": "USD",
+    "rate": "⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Apple Pie",
+    "cuisine": "American",
+    "category": "vegetarian",
+    "type": "dessert",
+    "ingredients": ["flour", "egg", "butter", "apples", "sugar"],
+    "amount": 22,
+    "price": 4,
+    "description": "Take and feel like in the american movie!",
+    "imgURL": "https://source.unsplash.com/1000x900/?apple-pie",
+    "currency": "EURO",
+    "rate": "⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Sausage with kartoffelsalat",
+    "cuisine": "Germany",
+    "category": "meat",
+    "type": "supper",
+    "ingredients": ["sausage", "potatoes", "spices", "salad dressing"],
+    "amount": 19,
+    "price": 6,
+    "description": "The best present after long day for yourself",
+    "imgURL": "https://source.unsplash.com/1000x900/?potato-salad",
+    "currency": "USD",
+    "rate": "⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Nuggest",
+    "cuisine": "American",
+    "category": "meat",
+    "type": "main course",
+    "ingredients": ["chicken", "potatoes"],
+    "amount": 15,
+    "price": 5,
+    "description": "Nuggesty!!!",
+    "imgURL": "https://source.unsplash.com/1000x900/?nuggets",
+    "currency": "USD",
+    "rate": "⭐⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Ratatouille",
+    "cuisine": "French",
+    "category": "vegan",
+    "type": "main course",
+    "ingredients": ["red pepper", "yellow pepper", "courgette", "aubergine", "tomato", "onion", "garlic", "olive oil", "spices"],
+    "amount": 23,
+    "price": 9,
+    "description": "Everything what you need to be happy",
+    "imgURL": "https://source.unsplash.com/1000x900/?ratatouille",
+    "currency": "EURO",
+    "rate": "⭐⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Tomato cream soup",
+    "cuisine": "Italien",
+    "category": "vegetarian",
+    "type": "soup",
+    "ingredients": ["tomato", "cream", "olive oil", "garlic", "spices"],
+    "amount": 13,
+    "price": 4,
+    "description": "Delicious! Including toasts",
+    "imgURL": "https://source.unsplash.com/1000x900/?tomato-soup",
+    "currency": "USD",
+    "rate": "⭐⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Creme Brulee",
+    "cuisine": "French",
+    "category": "vegetarian",
+    "type": "dessert",
+    "ingredients": ["cream", "egg yolk", "sugar"],
+    "amount": 20,
+    "price": 10,
+    "description": "Your guilty pleasure!",
+    "imgURL": "https://source.unsplash.com/1000x900/?creme-brulee",
+    "currency": "USD",
+    "rate": "⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Pork chop with potatoes",
+    "cuisine": "Poland",
+    "category": "meat",
+    "type": "main course",
+    "ingredients": ["pork chop", "breadcrumbs", "egg", "spices", "potatoes"],
+    "amount": 20,
+    "price": 11,
+    "description": "The best in Cracow!",
+    "imgURL": "https://source.unsplash.com/1000x900/?pork-chop",
+    "currency": "USD",
+    "rate": "⭐⭐⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  },
+
+  {
+    "name": "Vegetable shashliks",
+    "cuisine": "Indian",
+    "category": "vegan",
+    "type": "supper",
+    "ingredients": ["tomato", "pepper", "cucumber", "courgette", "aubergine"],
+    "amount": 16,
+    "price": 10,
+    "description": "Four grilled shashliks!",
+    "imgURL": "https://source.unsplash.com/1000x900/?shashliks",
+    "currency": "EURO",
+    "rate": "⭐⭐⭐",
+    "ratingArr": [3,2,1]
+
+  }
+]
+

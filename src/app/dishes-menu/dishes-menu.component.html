@@ -1,0 +1,10 @@
+<app-nav></app-nav>
+<app-filter-field (newItemEvent)="makeWithData($event)"></app-filter-field>
+
+<div id="cardsCollection">
+  <div *ngFor="let dish of (dishesList | getPrice:dataToFilter.lowPrice:dataToFilter.highPrice |  getSearch:dataToFilter.cuisine_type_category)">
+    <app-dish [someDish]="dish" class="card"></app-dish>
+  </div>
+</div>
+
+

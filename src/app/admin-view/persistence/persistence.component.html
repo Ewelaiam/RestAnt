@@ -1,0 +1,13 @@
+<p>Change your persistence: </p>
+
+<div class="form-wrapper">
+    <label>Type of Persistence</label>
+    <select [(ngModel)]="persistence">
+      <option [ngValue]="'Local'">Local</option>
+      <option  [ngValue]="'Session'">Session</option>
+      <option [ngValue]="'None'">None</option>
+    </select>
+  <br>
+
+  <button (click)="setPersistence(persistence.toLowerCase())">Change</button>
+</div>

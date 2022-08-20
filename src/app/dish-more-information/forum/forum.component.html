@@ -1,0 +1,20 @@
+<div class="forum">
+    <div class="commentbox">
+      <div class="header">
+        <h4>Comments ({{count}})</h4>
+      </div>
+      <div class="body">
+        <div class="comment-container">
+          <div class="comment-form">
+            <app-commentbox (usercomment)="takeComment($event)"></app-commentbox>
+          </div>
+        </div>
+      </div>
+    </div>
+  <ul>
+    <li *ngFor="let post of posts">
+      <app-comments [postComment]="post" class="comments" ></app-comments>
+    </li>
+  </ul>
+
+</div>

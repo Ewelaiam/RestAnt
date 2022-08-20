@@ -1,0 +1,28 @@
+<form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <input placeholder="nick" name="nick" formControlName="nick"
+               [ngClass]="{ 'is-invalid': submitted && commentForm.controls['nick'].errors}">
+        <input placeholder="dishname" name="dishname" formControlName="dishname"
+               [ngClass]="{ 'is-invalid': submitted && commentForm.controls['dishname'].errors}">
+        <input type="date" name="buydate" formControlName="buydate">
+        <textarea class="form-control" placeholder="Leave a comment" formControlName="comment"
+                  [ngClass]="{ 'is-invalid': submitted && commentForm.controls['comment'].errors}"></textarea>
+        <div class="invalid-feedback" *ngIf="submitted && commentForm.controls['comment'].errors">
+            <div *ngIf="commentForm.controls['comment'].errors['required']">Comment is required!</div>
+            <div *ngIf="commentForm.controls['comment'].errors['minlength']">Comment must be at least 50 characters</div>
+            <div *ngIf="commentForm.controls['comment'].errors['maxlength']">Comment must be at most 500 characters</div>
+        </div>
+
+      <div class="invalid-feedback" *ngIf="submitted && commentForm.controls['nick'].errors">
+        <div *ngIf="commentForm.controls['nick'].errors['required']">Nick is required!</div>
+      </div>
+
+      <div class="invalid-feedback" *ngIf="submitted && commentForm.controls['dishname'].errors">
+        <div *ngIf="commentForm.controls['dishname'].errors['required']">Dishname is required!</div>
+      </div>
+
+      </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Post Comment</button>
+    </div>
+</form>

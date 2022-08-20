@@ -1,0 +1,8 @@
+<div class="comments" *ngIf="postComment!==undefined">
+  <div class="comment-container">
+    <p >Nick: {{postComment.name}}</p>
+    <p >Dish name: {{postComment.title}}</p>
+    <p >Order date: {{postComment.date | date: 'dd/MM/yyyy'}}</p>
+    <p > Comment: <br> {{postComment.content}}</p>
+  </div>
+</div>

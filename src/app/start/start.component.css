@@ -1,0 +1,30 @@
+
+.mainBox{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("src/assets/img/start.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.buttonField{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #2e2a2b;
+  color: white;
+  padding: 40px;
+  border: 3px white solid;
+  text-align: center;
+}
+
+p{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.startH1{
+  background-color: #2e2a2b;
+  color: white;
+  text-align: center;
+}

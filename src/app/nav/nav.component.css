@@ -1,0 +1,29 @@
+.logo{
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+.userNav{
+  position: absolute;
+  left: 50vw;
+  color: yellow;
+}
+
+#navDishes{
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  padding-right: 30px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  height: 30px;
+}
+
+a:hover{
+  background-color: #ff5a00;
+}

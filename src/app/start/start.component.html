@@ -1,0 +1,13 @@
+<div class="mainBox">
+  <h1 class="startH1">REST ANT</h1>
+  <div class="buttonField">
+    <p *ngIf="user">Glad to see you again!</p>
+    <p *ngIf="!user">Nice to see you!</p>
+    <a routerLink="/dishes" *ngIf="user"><button>Go to menu</button></a>
+    <a routerLink="/main" (click)="logout()" *ngIf="user"><button>Logout</button></a>
+    <a routerLink="/dishes" *ngIf="!user"><button>See without login</button></a>
+    <a routerLink="/login" *ngIf="!user"><button>Login or sign up</button></a>
+  </div>
+</div>
+
+
